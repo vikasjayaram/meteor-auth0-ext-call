@@ -1,0 +1,22 @@
+<head>
+  <title>auth0-lock-sample</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor with Auth0 Lock!</h1>
+  {{> main}}
+</body>
+
+<template name="main">
+  {{#if currentUser}}
+    <p>Your name is: <b>{{currentUser.services.auth0.name}}</b></p>
+    <p>Provider: <b>{{getProvider currentUser.services.auth0.identities}}</b></p>
+    <p>id_token: <b>{{getIdToken}}</b></p>
+    <button class="call_ext_api">Call External API</button>
+    <pre class="user_data">{{json2html response}}</pre>
+    <button class="logout">Log Out</button>
+  {{else}}
+    <button class="login">Log In</button>
+  {{/if}}
+</template>
+
