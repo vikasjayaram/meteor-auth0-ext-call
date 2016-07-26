@@ -21,3 +21,7 @@ meteor --settings settings.json
 ```
 
 Go to `http://localhost:3000` and you'll see the app running & working :boom:.
+
+## Sample Screenshot
+![Image of screenshot]
+(https://github.com/vikasjayaram/meteor-auth0-ext-call/blob/master/screenshot/meteor_call_ext_call_blur.png)
