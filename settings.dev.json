@@ -5,7 +5,7 @@
     },
     "public": {
         "WEBTASK_BASE_URL": "{WEBTASK_BASE_URL}",
-        "WEBTASK_CALL_API_API": "{PATH_TO_WEBTASK_REST_PATH}",
+        "WEBTASK_CALL_API_API": "{WEBTASK_REST_PATH}",
         "EXTERNAL_IDP_URL": "{IDP_API}"
     }
 }
